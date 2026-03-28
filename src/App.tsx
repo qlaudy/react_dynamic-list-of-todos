@@ -13,7 +13,7 @@ import { Todo } from './types/Todo';
 export const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [selectedTodo, setSelectedTodo] = useState(null);
+  const [selectedTodo, setSelectedTodo] = useState<Todo | null>(null);
   const [filterStatus, setFilterStatus] = useState('all');
   const [query, setQuery] = useState('');
 
